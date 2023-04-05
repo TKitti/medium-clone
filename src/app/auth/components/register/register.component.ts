@@ -13,9 +13,9 @@ import { isSubmittingSelector } from '../../store/selectors';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  form!: FormGroup;
+  form: FormGroup = new FormGroup({});
   isSubmitting$!: Observable<boolean>;
-
+  
   constructor(private fb: FormBuilder, private store: Store) {}
 
   ngOnInit(): void {
