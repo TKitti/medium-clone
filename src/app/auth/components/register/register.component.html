@@ -36,7 +36,10 @@
               >
             </fieldset>
 
-            <button class="btn btn-lg btn-primary pull-xs-right" type="submit">Sign up</button>
+            <button 
+              class="btn btn-lg btn-primary pull-xs-right" 
+              type="submit"
+              [disabled]="isSubmitting$ | async">Sign up</button>
           </fieldset>
         </form>
       </div>
