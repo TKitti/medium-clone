@@ -5,6 +5,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from "@angular/forms";
 import { StoreModule } from "@ngrx/store";
 import { reducers } from "./store/reducers";
+import { AuthService } from "./services/auth.service";
 
 const routes = [
   {
@@ -21,6 +22,7 @@ const routes = [
   ], 
   declarations: [
     RegisterComponent
-  ]
+  ],
+  providers: [AuthService]
 })
 export class AuthModule{}
